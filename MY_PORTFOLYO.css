@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Mochiy+Pop+P+One&family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    background: black;
+    height: 10vh;
+}
+.nav-link{
+    font-size: 1.5em;
+    font-weight: 500;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.offcanvas-body ul li a{
+    font-family: sans-serif;
+}
+.img-home{
+    position: relative;
+    right: 12px;
+}
+.Portifolyo{
+    display: inline-block;
+    background-color: black;
+    width: 215px;
+    margin-top: 20px;
+    padding: 10px 15px;
+    font-size: 25px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.hello{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.Hello{
+    font-weight: 700;
+}
+.hello h2{
+    font-size: 3em;
+    font-weight: 700;
+}
+.btn{
+    width: 100px;
+}
+.btn span{
+    font-weight: 600;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.face{
+    display: inline-block;
+    margin: 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+    opacity: 0.7;
+}
+.SERVICE::before{
+    content: '';
+    background: black;
+    position: absolute;
+    width: 100%;
+    height: 153%;
+    right: 0;
+    top: 275%;
+    z-index: -1000;
+}
+.service{
+    height: auto;
+    margin: 35px;
+    margin-left: 65px;
+    background: #f5f5f5;
+    transition: 0.5s;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.service i{
+    display: flex;
+    justify-content: center;
+    font-size: 6em;
+    text-align: center;
+    padding-top: 20px;
+}
+.service h1{
+    text-align: center;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.service p{
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.service:hover{
+    background: #111;
+    color: white;
+}
+.figure{
+    padding: 10px;
+    border: 1px solid white;
+    cursor: pointer;
+    transform: scale(0.8);
+    border-radius: 5px;
+    transition: 0.5s;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.figure:hover{
+   transform: scale(1);
+   -webkit-transform: scale(1);
+   -moz-transform: scale(1);
+   -ms-transform: scale(1);
+   -o-transform: scale(1);
+}
+.email{
+    background-image: url('/IMAGE/martin-shreder-5Xwaj9gaR0g-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.name{
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+.gmail{
+    width: 81%;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+  
+
+/* ! ======================================= TABLET ===============================================================*/
+
+@media only screen and (max-width: 922px){
+    .img-home{
+        height: 100%;
+    }
+    .aboutt{
+        display: inline-block;
+        width: 700px;
+    }
+    .aboutus{
+        margin-top: 100px;
+    }
+    .SER{
+        max-width: 250%;
+    }
+    .SERVICE::before{
+        top: 300%;
+    }
+    .service{
+        margin: 35px;
+    }
+    .service:hover{
+        background: #f5f5f5;
+        color: black;
+    }
+    .figure{
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+    }
+    .name{
+        padding-left: 40px;
+        padding-bottom: 20px;
+    }
+    .gmail{
+        width: 81%;
+        margin-left: 50px;
+        margin-bottom: 20px;
+    }
+    .img{
+        margin-top: 50px;
+        margin-left: 20px;
+    }
+}
+
+
+/* ! ======================================= PHONE ===============================================================*/
+
+@media only screen and (max-width: 438px){
+    .img-home{
+        display: none;
+    }
+    .aboutt{
+        display: inline-block;
+        width: 100%;
+    }
+    .aboutus{
+        margin-top: 50px;
+    }
+    .SER{
+        max-width: 90%;
+    }
+    .SER h1{
+        margin-left: 30px;
+    }
+    .SER p{
+        margin-left: 30px;
+    }
+    .SERVICE::before{
+        width: 100%;
+        height: 300%;
+        top: 357%;
+    }
+    .service{
+        margin: 35px;
+        text-align: center;
+    }
+    .service:hover{
+        background: #f5f5f5;
+        color: black;
+    }
+    .my{
+        background: black;
+        width: 100%;
+    }
+    .my h1{
+        padding-top: 20px;
+    }
+}
